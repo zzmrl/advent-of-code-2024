@@ -1,0 +1,17 @@
+[package]
+name = "getaoc"
+version = "0.1.0"
+description = "Command-line utility to fetch puzzle input for Advent of Code"
+edition = "2021"
+authors = ["zmrl"]
+repository.workspace = true
+
+[dependencies]
+chrono = "^0.4"
+url = "^2.3"
+tracing = { version = "^0.1", features = ["attributes"] }
+dotenvy = "^0.15"
+reqwest = { version = "0.12.9", features = ["cookies"] }
+tokio = { version = "1.24", features = ["full"] }
+anyhow = "1"
+clap = { version = "^4.0", features = ["derive", "env"] }

@@ -1,0 +1,11 @@
+[package]
+name = "advent-of-code-2024"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+[workspace]
+members = ["./calendar/*", "./crates/*"]
+
+[workspace.package]
+repository = "https://github.com/zmrl010/advent-of-code-2024"
